@@ -7,6 +7,6 @@ import org.apache.ibatis.annotations.Select;
 
 @Mapper
 public interface NameMapper {
-    @Select("SELECT id, name FROM name")
+    @Select("SELECT id, name FROM movies;")
     List<Name> findAll();
 }
